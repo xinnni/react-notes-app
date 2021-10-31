@@ -1,15 +1,17 @@
 import React from "react";
+
 import Note from "../Note/Note";
+import AddNote from "../AddNote/AddNote";
 
 import "./NotesList.css";
 
-function NotesList() {
+function NotesList({ dummy }) {
   return (
     <div className="notesList">
-      <Note />
-      <Note />
-      <Note />
-      <Note />
+      {dummy.map(({ id, text, date }) => (
+        <Note id={id} text={text} date={date} />
+      ))}
+      <AddNote />
     </div>
   );
 }

@@ -4,14 +4,14 @@ import moment from "moment";
 
 import "./Note.css";
 
-function Note() {
+function Note({ id, text, date }) {
   const nowTime = moment().format("YYYY-MM-DD");
 
   return (
     <div className="note">
-      <span>Hello! This is out first note!</span>
+      <span>{text}</span>
       <div className="note-footer">
-        <small>{nowTime}</small>
+        <small>{date}</small>
         <IoCut className="delete-icon" size="1.3em" />
       </div>
     </div>

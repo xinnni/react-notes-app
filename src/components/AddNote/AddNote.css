@@ -1,0 +1,28 @@
+.note.new {
+  background-color: #9c86b3;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #9c86b3;
+  font-family: "Inter", sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  font-family: "Inter", sans-serif;
+}
+.save {
+  background-color: rgb(255, 255, 255);
+
+  border: none;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 3px 3px rgba(69, 43, 89, 0.529);
+  font-size: 10px;
+}
+.save:hover {
+  cursor: pointer;
+}
