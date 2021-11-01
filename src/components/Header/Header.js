@@ -7,10 +7,15 @@ function Header({ handleToggleDarkMode }) {
   };
   return (
     <div className="header">
-      <h1>Notes</h1>
-      <button onClick={handleToggleDarkModes} className="save">
-        Toggle Mode
-      </button>
+      <h1 className="header-h1">Notes</h1>
+      <label className="switch">
+        <input
+          type="checkbox"
+          className="inputs"
+          onClick={handleToggleDarkModes}
+        />
+        <span className="slider rounded" />
+      </label>
     </div>
   );
 }

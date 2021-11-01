@@ -8,14 +8,16 @@ function Search({ handleSearchNote }) {
     handleSearchNote(e.target.value);
   };
   return (
-    <div className="search">
-      <IoSearchOutline className="search-icon" size="1.3em" />
-      <input
-        onChange={handleSearchNotes}
-        className="search-input"
-        type="text"
-        placeholder="Type to search..."
-      />
+    <div className="search-container">
+      <div className="search">
+        <IoSearchOutline className="search-icon" size="1.3em" />
+        <input
+          onChange={handleSearchNotes}
+          className="search-input"
+          type="text"
+          placeholder="Type to search..."
+        />
+      </div>
     </div>
   );
 }

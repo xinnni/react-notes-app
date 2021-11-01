@@ -6,3 +6,10 @@
   padding-left: 15px;
   min-height: 100vh;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.notesList-margin-bottom-20 {
+  margin-bottom: 20px;
+}

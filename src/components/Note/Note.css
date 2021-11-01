@@ -7,8 +7,11 @@
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  transition: 0.2s ease-in-out;
 }
-
+.note:hover {
+  transform: scale(1.03);
+}
 .note-footer {
   display: flex;
   align-items: center;
@@ -17,4 +20,9 @@
 
 .delete-icon {
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.delete-icon:hover {
+  transform: scale(1.04);
 }
