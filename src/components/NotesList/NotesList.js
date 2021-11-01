@@ -5,13 +5,18 @@ import AddNote from "../AddNote/AddNote";
 
 import "./NotesList.css";
 
-function NotesList({ dummy }) {
+function NotesList({ dummy, handleAddNote, handleDeleteNote }) {
   return (
     <div className="notesList">
       {dummy.map(({ id, text, date }) => (
-        <Note id={id} text={text} date={date} />
+        <Note
+          id={id}
+          text={text}
+          date={date}
+          handleDeleteNote={handleDeleteNote}
+        />
       ))}
-      <AddNote />
+      <AddNote handleAddNote={handleAddNote} />
     </div>
   );
 }
